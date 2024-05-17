@@ -150,10 +150,10 @@ with response_container:
     st.session_state.initialPageLoad = False
     if st.session_state['responses']:
         for i in range(len(st.session_state['responses'])):
-            response = f"<div style='font-size:0.875rem;line-height:1.75;white-space:normal;'>{st.session_state['responses'][i]}</div>"
-            message(response,allow_html=True,key=str(i),logo=('https://raw.githubusercontent.com/Maniyuvi/SoftsquareChatbot/main/SS512X512.png'))
+            response = f"<div style='font-size:17px;line-height:1.40;white-space:normal;'>{st.session_state['responses'][i]}</div>"
+            message(response,allow_html=True,key=str(i),logo=('https://raw.githubusercontent.com/softsquareadmin/Public-FAQ-Chatbot/main/assets/logo/img1.png'))
             if i < len(st.session_state['requests']):
-                request = f"<meta name='viewport' content='width=device-width, initial-scale=1.0'><div style='font-size:.875rem'>{st.session_state['requests'][i]}</div>"
+                request = f"<meta name='viewport' content='width=device-width, initial-scale=1.0'><div style='font-size:17px;line-height:1.40;white-space:normal;'>{st.session_state['requests'][i]}</div>"
                 message(request, allow_html=True,is_user=True,key=str(i)+ '_user',logo='https://raw.githubusercontent.com/Maniyuvi/SoftsquareChatbot/main/generic-user-icon-13.jpg')
 
 
