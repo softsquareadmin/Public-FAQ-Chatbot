@@ -58,7 +58,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 if 'responses' not in st.session_state:
-    st.session_state['responses'] = ["Hi there, I am your Assist. How can I help you today?"]
+    st.session_state['responses'] = ["Welcome ! I'm your Assistant on helping with Oman Public Rules and Violations Information! How can I help you today?"]
 
 if 'requests' not in st.session_state:
     st.session_state['requests'] = []
